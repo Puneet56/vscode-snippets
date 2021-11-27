@@ -1,0 +1,60 @@
+{
+	"pruge config react": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "reactpurge",
+		"body": [
+			"mode:'jit',",
+			"purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],"
+		],
+		"description": "Tailwind css pruge config for react"
+	},
+	"css config react": {
+		"scope": "css",
+		"prefix": "tailwind",
+		"body": [
+			"@tailwind base;",
+			"@tailwind components;",
+			"@tailwind utilities;"
+		],
+		"description": "Tailwind classes config for css file"
+	},
+		"Print to console": {
+		"scope": "javascript,typescript",
+		"prefix": "log",
+		"body": ["console.log('$1');", "$2"],
+		"description": "Log output to console"
+	},
+
+	"Arrow function": {
+		"scope": "javascript,typescript",
+		"prefix": "arf",
+		"body": ["($1)=>{", "   $0}"],
+		"description": "quick arrow function"
+	},
+	"Handle Function Prevent Default": {
+		"scope": "javascript,javascriptreact,typescript",
+		"prefix": "hepd",
+		"body": [
+			"const $1Handler = (event) => {",
+			"   event.preventDefault()",
+			"   $0",
+			"};"
+		],
+		"description": "Handler Event Prevent Default"
+	},
+	"import tw from tailwind-styled-components": {
+		"scope": "javascript,typescript,javascriptreact",
+		"prefix": "itw",
+		"body": ["import tw from 'tailwind-styled-components';"],
+		"description": "import tw from tailwind-styled-components"
+	},
+		"tailwind config next app": {
+		"scope": "javascript,typescript",
+		"prefix": "nextpurge",
+		"body": [
+			"mode:'jit',",
+			"purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],"
+		],
+		"description": "purge config tailwind next app"
+	}
+}
